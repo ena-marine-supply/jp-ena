@@ -2,85 +2,101 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
-  <title>jp-ena.com｜株式会社詠南 オンラインストア</title>
+  <title>jp-ena.com｜株式会社詠南</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- 高級感フォント -->
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Noto+Serif+JP:wght@400;600&display=swap" rel="stylesheet">
+
   <style>
     body {
-      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
-      background: #f7f9fc;
-      color: #333;
+      font-family: 'Noto Serif JP', serif;
+      background: #0a0f18;
+      color: #e6e6e6;
       margin: 0;
       padding: 0;
     }
+
     header {
-      background: #1ea7ff;
+      background: #0d1524;
       padding: 1.5rem;
       text-align: center;
-      color: #fff;
-      border-bottom: 4px solid #0b6bb8;
+      border-bottom: 2px solid #1e2a3a;
     }
+
     header h1 {
       margin: 0;
+      font-family: 'Lora', serif;
       font-size: 1.8rem;
-      font-weight: bold;
+      color: #d4af37; /* ゴールド */
+      letter-spacing: 1px;
     }
+
     nav {
       margin-top: 0.8rem;
     }
+
     nav a {
-      color: #fff;
+      color: #e6e6e6;
       margin: 0 1rem;
       text-decoration: none;
       font-size: 1rem;
-      font-weight: 600;
+      font-family: 'Noto Serif JP', serif;
     }
-    .hero {
-      background: linear-gradient(135deg, #1ea7ff, #0b6bb8);
-      color: #fff;
-      padding: 3rem 1rem;
-      text-align: center;
+
+    /* ▼ バナー画像 ▼ */
+    .banner {
+      width: 100%;
+      max-height: 420px;
+      overflow: hidden;
+      border-bottom: 2px solid #1e2a3a;
     }
-    .hero h2 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
+    .banner img {
+      width: 100%;
+      height: auto;
+      display: block;
     }
-    .hero p {
-      font-size: 1.2rem;
-      line-height: 1.8;
-      max-width: 700px;
-      margin: 0 auto;
-    }
+
     .container {
       max-width: 900px;
-      margin: 2rem auto;
+      margin: 2.5rem auto;
       padding: 1.5rem;
     }
-    h3 {
-      color: #0b6bb8;
+
+    h2 {
+      font-family: 'Lora', serif;
+      font-size: 1.6rem;
+      color: #d4af37;
       margin-bottom: 1rem;
-      font-size: 1.4rem;
+      letter-spacing: 0.5px;
     }
+
     p {
-      line-height: 1.8;
-      margin-bottom: 1rem;
+      line-height: 1.9;
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+      color: #dcdcdc;
     }
+
     .highlight-box {
-      background: #e8f4ff;
-      border-left: 6px solid #1ea7ff;
+      background: #111a28;
+      border-left: 4px solid #d4af37;
       padding: 1.2rem;
       margin-bottom: 2rem;
       border-radius: 6px;
     }
+
     footer {
       text-align: center;
       padding: 1rem;
       margin-top: 2rem;
       font-size: 0.85rem;
-      color: #666;
-      border-top: 1px solid #ddd;
+      color: #9aa4b2;
+      border-top: 1px solid #1e2a3a;
     }
   </style>
 </head>
+
 <body>
 
 <header>
@@ -93,31 +109,27 @@
   </nav>
 </header>
 
-<div class="hero">
-  <h2>株式会社詠南ホームページ</h2>
-  <p>
-    株式会社詠南が運営するオンラインストア「エナドットコム」「エナスクエア」「jp-ena.com」は、  
-    お客様へ価値ある商品と情報をお届けしてまいります。
-  </p>
+<!-- ▼ 高級感バナー画像 ▼ -->
+<div class="banner">
+  <img src="img/top-banner.jpg" alt="https://github.com/ena-marine-supply/jp-ena/blob/main/img/jpc_2_1500x.webp?raw=true">
 </div>
 
 <div class="container">
 
+  <h2>jp-ena.com について</h2>
+  <p>
+    jp-ena.com は、新潟市を拠点とする株式会社詠南が運営するオンラインサイトです。  
+  </p>
+
   <div class="highlight-box">
-    <h3>お知らせ</h3>
+    <h2>お知らせ</h2>
     <p>
-      商品情報やサービス内容は随時更新しています。  
-      最新のご案内は当サイトにてご確認ください。
+      サイト内容は随時更新しております。  
+      最新の情報は当ページにてご案内いたします。
     </p>
   </div>
 
-  <h3>jp-ena.com について</h3>
-  <p>
-    jp-ena.com は、新潟市を拠点とする株式会社詠南が運営するオンラインストアです。  
-    シンプルで安心できるショッピング体験を目指し、国内外のお客様へ向けて情報を発信しています。
-  </p>
 
-  
 </div>
 
 <footer>
