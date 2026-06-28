@@ -2,307 +2,88 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
-  <title>Ena Marine Supply｜jp-ena.com</title>
+  <title>jp-ena.com｜Japan Online Store</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Ena Marine Supply｜日本・新潟発のマリンギア＆ワークウェアブランド。海で働く人と海を愛する人のためのタフで実用的なギアを、世界へ。Etsy・eBayショップは2026年7月下旬オープン予定。" />
   <style>
-    :root {
-      --bg: #0b1720;
-      --bg-alt: #111c27;
-      --accent: #1ea7ff;
-      --text: #f5f7fa;
-      --muted: #9aa4b2;
-      --max-width: 960px;
-    }
-    * { box-sizing: border-box; }
     body {
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      background: #0b1720;
+      color: #f5f7fa;
       margin: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.7;
+      padding: 0;
     }
     header {
+      background: #111c27;
+      padding: 1.2rem;
+      text-align: center;
       border-bottom: 1px solid #1f2933;
-      background: linear-gradient(135deg, #07111b, #0f2536);
     }
-    .container {
-      max-width: var(--max-width);
-      margin: 0 auto;
-      padding: 1.5rem;
-    }
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-    }
-    .brand-logo {
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      border: 2px solid var(--accent);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 700;
-      font-size: 0.9rem;
-      color: var(--accent);
-    }
-    .brand-title {
-      font-size: 1.1rem;
-      font-weight: 600;
-    }
-    .brand-sub {
-      font-size: 0.8rem;
-      color: var(--muted);
+    header h1 {
+      margin: 0;
+      font-size: 1.6rem;
+      color: #1ea7ff;
     }
     nav {
-      margin-top: 0.75rem;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.75rem;
-      font-size: 0.9rem;
+      text-align: center;
+      margin-top: 0.5rem;
     }
     nav a {
-      color: var(--muted);
+      color: #f5f7fa;
+      margin: 0 1rem;
       text-decoration: none;
-      padding: 0.25rem 0.5rem;
-      border-radius: 999px;
-      border: 1px solid transparent;
+      font-size: 0.95rem;
     }
-    nav a:hover {
-      color: var(--accent);
-      border-color: var(--accent);
-      background: rgba(30, 167, 255, 0.06);
+    .container {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 1.5rem;
     }
-    main {
-      background: radial-gradient(circle at top, #12283a 0, #050b10 55%);
-      min-height: 100vh;
-    }
-    .hero {
-      padding: 3rem 1.5rem 2rem;
-      text-align: left;
-    }
-    .hero-title {
-      font-size: 1.9rem;
-      font-weight: 700;
-      margin-bottom: 0.5rem;
-    }
-    .hero-tagline {
-      font-size: 1rem;
-      color: var(--accent);
+    h2 {
+      color: #1ea7ff;
       margin-bottom: 1rem;
     }
-    .hero-lead {
-      max-width: 40rem;
-      color: var(--muted);
-      font-size: 0.95rem;
-      margin-bottom: 0.75rem;
-    }
-    .hero-note {
-      font-size: 0.85rem;
-      color: var(--muted);
-    }
-    .sections {
-      padding: 1rem 1.5rem 3rem;
-      display: grid;
-      gap: 1.5rem;
-    }
-    section {
-      background: var(--bg-alt);
-      border-radius: 0.75rem;
-      padding: 1.25rem 1.5rem;
-      border: 1px solid #1f2933;
-    }
-    section h2 {
-      font-size: 1.1rem;
-      margin-top: 0;
-      margin-bottom: 0.5rem;
-    }
-    section h3 {
-      font-size: 1rem;
-      margin-top: 1rem;
-      margin-bottom: 0.25rem;
-    }
     p {
-      margin: 0.25rem 0 0.75rem;
-      font-size: 0.9rem;
-    }
-    ul {
-      margin: 0.25rem 0 0.75rem 1.2rem;
-      padding: 0;
-      font-size: 0.9rem;
-    }
-    .lang-label {
-      font-size: 0.75rem;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: var(--muted);
-      margin-bottom: 0.25rem;
-    }
-    .contact-email {
-      font-family: "Consolas", "SFMono-Regular", Menlo, Monaco, monospace;
-      font-size: 0.9rem;
-      color: var(--accent);
+      line-height: 1.8;
+      margin-bottom: 1rem;
     }
     footer {
-      border-top: 1px solid #1f2933;
-      padding: 1rem 1.5rem 2rem;
-      font-size: 0.75rem;
-      color: var(--muted);
       text-align: center;
-      background: #050b10;
-    }
-    @media (min-width: 768px) {
-      .hero {
-        padding-top: 3.5rem;
-      }
-      .sections {
-        grid-template-columns: 1fr 1fr;
-      }
-      section.full {
-        grid-column: 1 / -1;
-      }
+      padding: 1rem;
+      margin-top: 2rem;
+      font-size: 0.85rem;
+      color: #9aa4b2;
+      border-top: 1px solid #1f2933;
     }
   </style>
 </head>
 <body>
-  <header>
-    <div class="container">
-      <div class="brand">
-        <div class="brand-logo">EMS</div>
-        <div>
-          <div class="brand-title">Ena Marine Supply</div>
-          <div class="brand-sub">Marine Gear & Workwear from Niigata, Japan</div>
-        </div>
-      </div>
-      <nav>
-        <a href="#about">About</a>
-        <a href="#products">Products</a>
-        <a href="#shipping">Shipping</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
-  </header>
 
-  <main>
-    <div class="container hero">
-      <h1 class="hero-title">Ena Marine Supply｜マリンギア＆ワークウェア</h1>
-      <div class="hero-tagline">
-        海で働く人と、海を愛する人のためのギアを、世界へ。 / Trusted gear for every ocean journey.
-      </div>
-      <p class="hero-lead">
-        Ena Marine Supply（エナ・マリン・サプライ）は、日本・新潟を拠点とするマリンギア＆ワークウェアのECブランドです。
-        プロの現場でも使える実用性と、長く付き合えるタフさにこだわり、世界中のお客様へ厳選したアイテムをお届けします。
-      </p>
-      <p class="hero-lead">
-        現在、オンラインショップは 2026年7月下旬のオープンに向けて準備中です。
-      </p>
-      <p class="hero-note">
-        Our online shops on Etsy and eBay are currently under preparation and scheduled to open in late July 2026.
-      </p>
-    </div>
+<header>
+  <h1>jp-ena.com</h1>
+  <nav>
+    <a href="company.html">会社概要</a>
+    <a href="legal.html">特商法表記</a>
+    <a href="privacy.html">プライバシー</a>
+    <a href="contact.html">お問い合わせ</a>
+  </nav>
+</header>
 
-    <div class="container sections">
-      <!-- About -->
-      <section id="about">
-        <div class="lang-label">日本語 / Japanese</div>
-        <h2>About Ena Marine Supply</h2>
-        <p>
-          Ena Marine Supply は、日本・新潟を拠点とするマリンギア＆ワークウェアブランドです。
-          20年間のECサイト運営、物流、マリンレジャーに携わってきたオーナーによって立ち上げられ、
-          「海で働く人」「海で遊ぶ人」のどちらにも信頼されるギアを届けることを目指しています。
-          耐久性・機能性・コストバランスを重視し、世界中のお客様へ厳選したアイテムをお届けします。
-        </p>
+<div class="container">
+  <h2>Japan Online Store</h2>
+  <p>
+    jp-ena.com は、日本国内の商品を世界へお届けするオンラインストアです。
+    シンプルで安心できるショッピング体験を提供することを目指しています。
+  </p>
 
-        <div class="lang-label">English</div>
-        <p>
-          Ena Marine Supply is a marine gear and workwear brand based in Niigata, Japan.
-          Founded by an owner with over 20 years of experience in e-commerce, logistics, and marine activities,
-          we provide dependable gear for both professionals and enthusiasts, with a focus on durability,
-          functionality, and balanced cost performance.
-        </p>
-      </section>
+  <p>
+    商品情報やサービス内容については、随時更新してまいります。
+    最新のご案内は当サイトにてご確認いただけます。
+  </p>
+</div>
 
-      <!-- Products -->
-      <section id="products">
-        <div class="lang-label">日本語 / Japanese</div>
-        <h2>What We Offer｜取扱商品</h2>
-        <ul>
-          <li>マリンギア（ボート用品・マリンアクセサリー）</li>
-          <li>フィッシングツール（釣具関連アイテム）</li>
-          <li>ワークウェア（現場向けウェア・ギア）</li>
-        </ul>
-        <p>
-          オンラインショップは 2026年7月下旬より順次公開予定です。公開後、各マーケットプレイスへのリンクを本サイトに掲載します。
-        </p>
+<footer>
+  &copy; 2026 jp-ena.com
+</footer>
 
-        <div class="lang-label">English</div>
-        <ul>
-          <li>Marine gear (boat equipment and marine accessories)</li>
-          <li>Fishing tools (tackle-related items)</li>
-          <li>Workwear (gear and clothing for demanding worksites)</li>
-        </ul>
-        <p>
-          Our products will be available mainly through global marketplaces such as Etsy and eBay,
-          starting in late July 2026. Links to each shop will be added to this site once they are live.
-        </p>
-      </section>
-
-      <!-- Shipping -->
-      <section id="shipping" class="full">
-        <div class="lang-label">日本語 / Japanese</div>
-        <h2>International Shipping｜国際配送</h2>
-        <p>
-          日本から世界各国へ、追跡可能な配送方法（EMS / 国際宅配便 等）を利用してお届けします。
-          配送可能な国・地域、送料、納期の目安については、オンラインショップ公開後、
-          各ショッピングページにてご案内いたします。
-        </p>
-
-        <div class="lang-label">English</div>
-        <p>
-          We ship worldwide from Japan using trackable methods such as EMS and international courier services.
-          Details on available destinations, shipping fees, and estimated delivery times will be provided
-          on each shop page once our online stores are open.
-        </p>
-      </section>
-
-      <!-- Contact -->
-      <section id="contact" class="full">
-        <div class="lang-label">日本語 / Japanese</div>
-        <h2>Contact｜お問い合わせ</h2>
-        <p>
-          商品に関するご質問、取扱いのご相談、業務用ロットのご相談などは、
-          下記メールアドレスまでお気軽にお問い合わせください。
-        </p>
-        <p class="contact-email">Email: <a href="mailto:support@jp-ena.com">support@jp-ena.com</a></p>
-
-        <div class="lang-label">English</div>
-        <p>
-          For product inquiries, business use, or bulk orders, please feel free to contact us at the email below.
-        </p>
-        <p class="contact-email">Email: <a href="mailto:support@jp-ena.com">support@jp-ena.com</a></p>
-
-        <!-- Online shops (coming soon) -->
-        <h3>Online Shops（Coming Soon）</h3>
-        <p>
-          オンラインショップ（Etsy / eBay）は 2026年7月下旬オープン予定です。<br />
-          公開後、こちらに各ショップへのリンクを掲載します。
-        </p>
-        <p>
-          Our online shops on Etsy and eBay are scheduled to open in late July 2026.<br />
-          Links will be added here once they are available.
-        </p>
-      </section>
-    </div>
-  </main>
-
-  <footer>
-    &copy; <span id="year"></span> Ena Marine Supply / jp-ena.com. All rights reserved.
-  </footer>
-
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
